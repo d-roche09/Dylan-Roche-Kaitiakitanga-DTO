@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaitiakitanga — Kauri Dieback</title>
+    <link rel="stylesheet" href="quizstyle.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <h1><a href="learn_more.html" class="rightnavs navlink">Learn More</a></h1>
+            <h1><a href="quizzes.html" class="rightnavs navlink">Quiz</a></h1>
+            <h1><a href="how_stop.html" class="rightnavs navlink">How to stop it</a></h1>
+            <h1><a href="what_is_it.html" class="rightnavs navlink">Kauri Dieback</a></h1>
+            <h1><a href="index.html" class="navlink">Kaitiakitanga</a></h1>
+        </div>
+    </nav>
+    <main style="margin-top: 10vw;">
+        <div class="progressbar">
+            <div id="filler">
+            </div>
+        </div>
+        <h2 id="percentCorrect">100% Correct</h2>
+        <center><a id="restart" onclick="restart()">Try Again</a></center>
+        <div class="slideshow-container">
+            <!-- Next and previous buttons -->
+            <a id="wrong" onclick="percentRight(), plusSlides(1), increaseprogress()">&#xd7;</a>
+            <a id="correct" onclick="plusSlides(1), increaseprogress()"><b>&#x2713;</b></a>
+        </div>
+        <center>
+            <p
+                style="color: black; margin-top: 2vw; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Click on Card to flip</p>
+        </center>
+    </main>
+    <script src="quiz.js"></script>
+    <script src="quizdisplay.js"></script>
+</body>
